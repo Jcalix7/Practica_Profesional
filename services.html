@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d34b494c8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <section class="tank-bootstrap-header">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Brother´s Garage</a>
+                <button class="navbar-toggler" type="button" 
+                data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse"  id="navbarSupportedContent" >
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+           </div> 
+        </nav>
+    </section>
+
+
+    <section class="tank-about-breadcrum">
+        <div class="breadcrum-bg">
+            <div class="container py-5">
+                <p><a href="index.html">Inicio</a>&nbsp; / &nbsp; Servicios</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="tank-features-4">
+        <div class="features py-5" id="services">
+            <div class="container py-md-3">
+                <div class="heading text-center mx-auto">
+                    <h3 class="head">Nuestros Servicios</h3>
+                    <p>Nuestra prioridad es brindarle el mejor servicio con un precio accesible; tratando a su auto de la mejor manera posible; ya que un auto tambien merece ser consentido para poder obtener el mejor rendimiento. Y recuerda que en brother´s garage encuentras tu solución.</p>
+                </div>
+                <div class="fea-gd-vv row mt-5 pt-3">
+                    <div class="float-lt feature-gd col-lg-4 col-md-6">
+                        <div class="icon">
+                            <i class="fas fa-spray-can"></i>
+                        </div>
+                        <div class="icon-info">
+                            <h5><a href="#">Pintura</a></h5>
+                            <p>Tenemos todo lo necesario en Pintura para autos, incluyendo pasteado y robineado.</p>
+                            </span></a>
+                        </div>
+                    </div>
+                    <div class="float-mid feature-gd col-lg-4 col-md-6 mt-md-0 mt-5">
+                        <div class="icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="icon-info">
+                            <h5><a href="#">Cambio de Aceite</a></h5>
+                            <p>Realizamos cambios de aciete a cualquier vehiculo, aceites 100% originales con su respectivo filtro.</p>
+                            </span></a>
+                        </div>
+                    </div>
+                    <div class="float-rt feature-gd col-lg-4 col-md-6 mt-md-0 mt-5">
+                        <div class="icon">
+                            <i class="fas fa-car-crash"></i>
+                        </div>
+                        <div class="icon-info">
+                            <h5><a href="#">Lavados</a></h5>
+                            <p>Desde lavados generales hasta lavados personalizados, chasis, motor, entre otros.</p>
+                            </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tank-footer-29-main" id="footer">
+        <div class="footer-29 text-center">
+            <div class="container">
+                <div class="main-social-footer-29">
+                    <a href="https://www.facebook.com/profile.php?id=100070952536445" class="facebook"><span class="fa fa-facebook"></span></a>
+                    <a href="https://www.instagram.com/thebrothersgarage61/" class="instagram"><span class="fa fa-instagram"></span></a>
+                </div>
+                <div class="bottom-copies text-center">
+                    <p class="copy-footer-29">2021 Derechos Reservados <a href="#">Josué Cálix</a></p>
+                </div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+        </button>
+            <script>
+                window.onscroll = function() {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if(document.body.scrollTop > 20 || document.documentElement. scrollTop > 20) {
+                        document.getElementById("movetop").style.display = "block";
+                    }else{
+                        document.getElementById("movetop").style.display = "none";
+                    }
+                }
+
+                function topFunction () {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+    </section>
+
+    
+
+
+    <script>
+        $(function(){
+            $('.navbar-toggler').click(function(){
+                $('body').toggleClass('noscroll');
+            })
+
+        });
+    </script>
+
+
+
+
+
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
